@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <link href="../css/style-preview.css" rel="stylesheet" type="text/css" />
+    <!-- <link href="../css/photographer.css" rel="stylesheet" type="text/css" /> -->
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8">
+    <meta name="description" content="Cette page contient les infos relatives au photographe [NOM] [PRÉNOM]">
+    <link rel="icon" type="image/png" href="../assets/images/logo/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
+    <title>Fisheye - photographe [NOM] [PRÉNOM]</title>
+  </head>
+  <body>
+    <header>
+      <a href="../index.html" class="header__logo-wrapper" title="Lien vers la page d'acceuil">
+        <img src="../assets/images/logo/logo.png" class="logo" />
+      </a>
+    </header>
+    <main id="main">
+      <div class="photographer-header">
+        <button class="contact-button" onclick="displayModal()">Contactez-moi</button>
+      </div>
+    </main>
+    <div id="contact_modal">
+			<div class="modal">
+				<header>
+          <h2>Contactez-moi</h2>
+          <img src="../assets/icons/close.svg" onclick="closeModal()" />
+        </header>
+				<form>
+					<div>
+						<label>Prénom</label>
+						<input />
+					</div>
+          <button class="contact_button">Envoyer</button>
+				</form>
+			</div>
+		</div>
+    <script src="/scripts/pages/photographerPage.js" defer></script>
+    <script src="/scripts/utils/contactForm.js" defer></script>
+  </body>
+</html>

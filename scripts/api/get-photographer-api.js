@@ -1,4 +1,4 @@
-// Create api to get 
+// Create api to get photos
 
 class Api {
     constructor(url) {

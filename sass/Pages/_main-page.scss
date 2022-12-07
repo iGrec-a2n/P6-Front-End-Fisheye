@@ -45,6 +45,7 @@
 
         &:nth-child(odd) {
             background-color: var(--odd-card-bg-color);
+            border-radius: 6px;
         }
     }
 
@@ -68,6 +69,13 @@
         color: var(--text-color-primary);
         font-size: 36px;
         @include center-flex-column();
+
+        transition: all 350ms ease-out;
+
+        &:hover {
+            scale: 110%;
+            transform: translateY(-15px);
+        }
     }
 
     &__location {

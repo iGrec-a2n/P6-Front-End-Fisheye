@@ -2,21 +2,24 @@
 <html lang="fr">
 
 <head>
-  <link href="../css/style-preview.css" rel="stylesheet" type="text/css" />
-  <!-- <link href="../css/photographer.css" rel="stylesheet" type="text/css" /> -->
   <link href="../css/style.css" rel="stylesheet" type="text/css" />
   <meta charset="utf-8">
   <meta name="description" content="Cette page contient les infos relatives au photographe [NOM] [PRÉNOM]">
   <link rel="icon" type="image/png" href="../assets/images/logo/favicon.png">
   <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
   <title>Fisheye - photographe [NOM] [PRÉNOM]</title>
-
+  
+  <!-- Icon - Font Awesome -->
+  <script src="https://kit.fontawesome.com/8f44403758.js" crossorigin="anonymous"></script>
+  
   <!-- JS -->
   <!-- APIs   -->
   <script defer src="../scripts/api/get-photographer-api.js"></script>
 
   <!-- Factories   -->
   <script defer src="../scripts/factories/mediaFactory.js"></script>
+  <script defer src="../scripts/factories/createImagePost.js"></script>
+  <script defer src="../scripts/factories/createVideoPost.js"></script>
 
   <!--  Utilities  -->
   <script defer src="../scripts/utils/get-url-parameters.js"></script>
@@ -147,21 +150,7 @@
     <template>
 
       <section class="main__profile-container" role="region" tabindex="0">
-        <div class="profile__card-container">
-          <div class="profile__card" tabindex="0">
-            <h1 class="profile__name" tabindex="0">${name}</h1>
-            <h2 class="profile__location" tabindex="0">${city}, ${country}</h2>
-            <h3 class="profile__slogan" tabindex="0">${tagline}</h3>
-          </div>
-        </div>
-        <div class="profile__contact">
-          <button type="button" class="button button--rounded" tabindex="0"
-            aria-label="Bouton pour ouvrir la boîte de dialogue pour contacter le photographe">Contactez-moi</button>
-        </div>
-        <div class="profile__image-container">
-          <img src="../assets/images/Photographs Profile pictures/${portrait}"
-            alt="Photo de profil du compte de: ${name}" class="profile__image" tabindex="0" />
-        </div>
+
       </section>
 
     </template>
@@ -221,18 +210,7 @@
 
           <div class="images__post-container" data-post-id="${id}" data-photographers-id="${photographerId}"
             data-publishing-date="${date}" data-likes="${likes}" data-user-liked="false" data-title="${title}">
-            <div class="images__post">
-              <a href="#" title="${title}" aria-label="Image nommée ${title}" role="link" tabindex="0">
-                <img class="images__image" src="../assets/images/Posts photos/${image}"
-                  alt="'${title}' fait en ${new Date(date).getFullYear()}" />
-              </a>
-              <div class="images__post-text">
-                <p class="images__post-description" tabindex="0">${title}</p>
-                <button class="images__post-like-button" title="Mettre un like au post '${title}'?" aria-pressed="false"
-                  aria-label="Bouton pour liker la publication nommée '${title}'" tabindex="0">${likes} <i
-                    class="fa-solid fa-heart"></i></button>
-              </div>
-            </div>
+
           </div>
 
 
@@ -242,20 +220,6 @@
           <div class="images__post-container" data-post-id="${id}" data-photographers-id="${photographerId}"
             data-publishing-date="${date}" data-likes="${likes}" data-user-liked="false" data-title="${title}">
 
-            <div class="images__post">
-
-              <a href="#" title="Video nommée ${title}" role="link">
-                <video src="../assets/images/Posts photos/${video}" class="images__video">
-                </video>
-              </a>
-              <div class="images__post-text">
-                <p class="images__post-description">${title}</p>
-                <button class="images__post-like-button" title="Mettre un like au post '${title}'?" aria-pressed="false"
-                  aria-label="Bouton pour liker la publication nommée '${title}'">${likes} <i
-                    class="fa-solid fa-heart"></i></button>
-              </div>
-
-            </div>
           </div>
 
         </template>

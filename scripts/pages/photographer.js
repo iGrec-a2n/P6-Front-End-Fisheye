@@ -82,8 +82,8 @@ class PhotographerApp {
     }
   
     static changeUIOfPostsV2(postObject, type, container) {
-      let template = new MediaFactory(postObject, type);
-      container.innerHTML += template.postTemplate;
+      let media = new MediaFactory(postObject, type);
+      container.innerHTML += media.createPost();
     }
   
     static updateUIOfStickyBar(photographerObject) {

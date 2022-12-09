@@ -27,6 +27,7 @@
   --bg-color-secondary:#901C1C;
   --bg-color-tertiary:black;
   --bg-color-quaternary:#757575;
+  --bg-color-quinary:#fafafa;
   --scrollbar-bg-color:#f1f1f1;
   --scrollbar-thumb-bg-color:#c1c1c1;
   --scrollbar-thumb-bg-color--hover:#a8a8a8;
@@ -65,6 +66,7 @@
   --bg-color-secondary:#901C1C;
   --bg-color-tertiary:black;
   --bg-color-quaternary:#757575;
+  --bg-color-quinary:#fafafa;
   --scrollbar-bg-color:#f1f1f1;
   --scrollbar-thumb-bg-color:#c1c1c1;
   --scrollbar-thumb-bg-color--hover:#a8a8a8;
@@ -103,6 +105,7 @@
   --bg-color-secondary:#901C1C;
   --bg-color-tertiary:black;
   --bg-color-quaternary:#757575;
+  --bg-color-quinary:#fafafa;
   --scrollbar-bg-color:#f1f1f1;
   --scrollbar-thumb-bg-color:#c1c1c1;
   --scrollbar-thumb-bg-color--hover:#a8a8a8;
@@ -141,6 +144,7 @@
   --bg-color-secondary:#901C1C;
   --bg-color-tertiary:black;
   --bg-color-quaternary:#757575;
+  --bg-color-quinary:#fafafa;
   --scrollbar-bg-color:#f1f1f1;
   --scrollbar-thumb-bg-color:#c1c1c1;
   --scrollbar-thumb-bg-color--hover:#a8a8a8;
@@ -268,6 +272,7 @@
   --bg-color-secondary:#901C1C;
   --bg-color-tertiary:black;
   --bg-color-quaternary:#757575;
+  --bg-color-quinary:#fafafa;
   --scrollbar-bg-color:#f1f1f1;
   --scrollbar-thumb-bg-color:#c1c1c1;
   --scrollbar-thumb-bg-color--hover:#a8a8a8;
@@ -306,6 +311,7 @@
   --bg-color-secondary:#901C1C;
   --bg-color-tertiary:black;
   --bg-color-quaternary:#757575;
+  --bg-color-quinary:#fafafa;
   --scrollbar-bg-color:#f1f1f1;
   --scrollbar-thumb-bg-color:#c1c1c1;
   --scrollbar-thumb-bg-color--hover:#a8a8a8;
@@ -412,6 +418,7 @@ ul {
   --bg-color-secondary:#901C1C;
   --bg-color-tertiary:black;
   --bg-color-quaternary:#757575;
+  --bg-color-quinary:#fafafa;
   --scrollbar-bg-color:#f1f1f1;
   --scrollbar-thumb-bg-color:#c1c1c1;
   --scrollbar-thumb-bg-color--hover:#a8a8a8;
@@ -450,6 +457,7 @@ ul {
   --bg-color-secondary:#901C1C;
   --bg-color-tertiary:black;
   --bg-color-quaternary:#757575;
+  --bg-color-quinary:#fafafa;
   --scrollbar-bg-color:#f1f1f1;
   --scrollbar-thumb-bg-color:#c1c1c1;
   --scrollbar-thumb-bg-color--hover:#a8a8a8;
@@ -506,6 +514,7 @@ ul {
   --bg-color-secondary:#901C1C;
   --bg-color-tertiary:black;
   --bg-color-quaternary:#757575;
+  --bg-color-quinary:#fafafa;
   --scrollbar-bg-color:#f1f1f1;
   --scrollbar-thumb-bg-color:#c1c1c1;
   --scrollbar-thumb-bg-color--hover:#a8a8a8;
@@ -544,6 +553,7 @@ ul {
   --bg-color-secondary:#901C1C;
   --bg-color-tertiary:black;
   --bg-color-quaternary:#757575;
+  --bg-color-quinary:#fafafa;
   --scrollbar-bg-color:#f1f1f1;
   --scrollbar-thumb-bg-color:#c1c1c1;
   --scrollbar-thumb-bg-color--hover:#a8a8a8;
@@ -601,6 +611,7 @@ ul {
   --bg-color-secondary:#901C1C;
   --bg-color-tertiary:black;
   --bg-color-quaternary:#757575;
+  --bg-color-quinary:#fafafa;
   --scrollbar-bg-color:#f1f1f1;
   --scrollbar-thumb-bg-color:#c1c1c1;
   --scrollbar-thumb-bg-color--hover:#a8a8a8;
@@ -639,6 +650,7 @@ ul {
   --bg-color-secondary:#901C1C;
   --bg-color-tertiary:black;
   --bg-color-quaternary:#757575;
+  --bg-color-quinary:#fafafa;
   --scrollbar-bg-color:#f1f1f1;
   --scrollbar-thumb-bg-color:#c1c1c1;
   --scrollbar-thumb-bg-color--hover:#a8a8a8;
@@ -684,6 +696,7 @@ ul {
   --bg-color-secondary:#901C1C;
   --bg-color-tertiary:black;
   --bg-color-quaternary:#757575;
+  --bg-color-quinary:#fafafa;
   --scrollbar-bg-color:#f1f1f1;
   --scrollbar-thumb-bg-color:#c1c1c1;
   --scrollbar-thumb-bg-color--hover:#a8a8a8;
@@ -722,6 +735,7 @@ ul {
   --bg-color-secondary:#901C1C;
   --bg-color-tertiary:black;
   --bg-color-quaternary:#757575;
+  --bg-color-quinary:#fafafa;
   --scrollbar-bg-color:#f1f1f1;
   --scrollbar-thumb-bg-color:#c1c1c1;
   --scrollbar-thumb-bg-color--hover:#a8a8a8;
@@ -784,6 +798,7 @@ ul {
   --bg-color-secondary:#901C1C;
   --bg-color-tertiary:black;
   --bg-color-quaternary:#757575;
+  --bg-color-quinary:#fafafa;
   --scrollbar-bg-color:#f1f1f1;
   --scrollbar-thumb-bg-color:#c1c1c1;
   --scrollbar-thumb-bg-color--hover:#a8a8a8;
@@ -822,6 +837,7 @@ ul {
   --bg-color-secondary:#901C1C;
   --bg-color-tertiary:black;
   --bg-color-quaternary:#757575;
+  --bg-color-quinary:#fafafa;
   --scrollbar-bg-color:#f1f1f1;
   --scrollbar-thumb-bg-color:#c1c1c1;
   --scrollbar-thumb-bg-color--hover:#a8a8a8;
@@ -891,6 +907,7 @@ ul {
   --bg-color-secondary:#901C1C;
   --bg-color-tertiary:black;
   --bg-color-quaternary:#757575;
+  --bg-color-quinary:#fafafa;
   --scrollbar-bg-color:#f1f1f1;
   --scrollbar-thumb-bg-color:#c1c1c1;
   --scrollbar-thumb-bg-color--hover:#a8a8a8;
@@ -929,6 +946,7 @@ ul {
   --bg-color-secondary:#901C1C;
   --bg-color-tertiary:black;
   --bg-color-quaternary:#757575;
+  --bg-color-quinary:#fafafa;
   --scrollbar-bg-color:#f1f1f1;
   --scrollbar-thumb-bg-color:#c1c1c1;
   --scrollbar-thumb-bg-color--hover:#a8a8a8;
@@ -967,6 +985,7 @@ ul {
   --bg-color-secondary:#901C1C;
   --bg-color-tertiary:black;
   --bg-color-quaternary:#757575;
+  --bg-color-quinary:#fafafa;
   --scrollbar-bg-color:#f1f1f1;
   --scrollbar-thumb-bg-color:#c1c1c1;
   --scrollbar-thumb-bg-color--hover:#a8a8a8;
@@ -1005,6 +1024,7 @@ ul {
   --bg-color-secondary:#901C1C;
   --bg-color-tertiary:black;
   --bg-color-quaternary:#757575;
+  --bg-color-quinary:#fafafa;
   --scrollbar-bg-color:#f1f1f1;
   --scrollbar-thumb-bg-color:#c1c1c1;
   --scrollbar-thumb-bg-color--hover:#a8a8a8;
@@ -1149,6 +1169,7 @@ ul {
   --bg-color-secondary:#901C1C;
   --bg-color-tertiary:black;
   --bg-color-quaternary:#757575;
+  --bg-color-quinary:#fafafa;
   --scrollbar-bg-color:#f1f1f1;
   --scrollbar-thumb-bg-color:#c1c1c1;
   --scrollbar-thumb-bg-color--hover:#a8a8a8;
@@ -1187,6 +1208,7 @@ ul {
   --bg-color-secondary:#901C1C;
   --bg-color-tertiary:black;
   --bg-color-quaternary:#757575;
+  --bg-color-quinary:#fafafa;
   --scrollbar-bg-color:#f1f1f1;
   --scrollbar-thumb-bg-color:#c1c1c1;
   --scrollbar-thumb-bg-color--hover:#a8a8a8;
@@ -1330,6 +1352,7 @@ ul {
   --bg-color-secondary:#901C1C;
   --bg-color-tertiary:black;
   --bg-color-quaternary:#757575;
+  --bg-color-quinary:#fafafa;
   --scrollbar-bg-color:#f1f1f1;
   --scrollbar-thumb-bg-color:#c1c1c1;
   --scrollbar-thumb-bg-color--hover:#a8a8a8;
@@ -1368,6 +1391,7 @@ ul {
   --bg-color-secondary:#901C1C;
   --bg-color-tertiary:black;
   --bg-color-quaternary:#757575;
+  --bg-color-quinary:#fafafa;
   --scrollbar-bg-color:#f1f1f1;
   --scrollbar-thumb-bg-color:#c1c1c1;
   --scrollbar-thumb-bg-color--hover:#a8a8a8;
@@ -1406,7 +1430,7 @@ ul {
 .main__profile-container {
   position: relative;
   padding: 20px 10px;
-  background-color: #fafafa;
+  background-color: var(--bg-color-quinary);
   border-radius: 10px;
   display: grid;
   grid-template-rows: repeat(1, 1fr);

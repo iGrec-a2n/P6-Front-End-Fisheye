@@ -338,7 +338,7 @@ function updateModalImage(newImageFileName, newPostDescription) {
     imageElement.setAttribute("alt", `Photo nommée '${newPostDescription}'`);
     imageElement.setAttribute(
       "src",
-      `../assets/images/Posts photos/images/${newImageFileName}`
+      `../../assets/images/Posts_photos/images/${newImageFileName}`
     );
   } else {
     //Element to be hidden
@@ -348,7 +348,7 @@ function updateModalImage(newImageFileName, newPostDescription) {
     videoElement.setAttribute("alt", `Vidéo nommée '${newPostDescription}'`);
     videoElement.setAttribute(
       "src",
-      `../assets/images/Posts photos/videos/${newImageFileName}`
+      `../../assets/images/Posts_photos/videos/${newImageFileName}`
     );
   }
 

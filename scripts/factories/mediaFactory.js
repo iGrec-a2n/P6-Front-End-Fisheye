@@ -1,9 +1,12 @@
 class MediaFactory {
     constructor(cardObject, type) {
+      console.log(`A type of: ${type} post, found.`);
       if (type === "video") {
-        return new PhotographerProfileTemplateV2(cardObject).createPostVideo();
+        // call createPostVideo here
+        return new PostVideo(cardObject);
       } else if (type === "image") {
-        return new PhotographerProfileTemplateV2(cardObject).createPostImage();
+        // call createPostImage here
+        return new PostImage(cardObject);
       } else {
         throw "Photographer factory error: unknown type format";
       }

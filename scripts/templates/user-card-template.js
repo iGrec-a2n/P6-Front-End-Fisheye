@@ -14,7 +14,7 @@ class UserCardTemplate {
             <a class="card__photograph-profile" title="Visiter la page de profil de ${name}?"
               href="./html/photographer.html?id=${id}" target="blank" role="link">
               <h2 class="card__name">
-                <img src="./assets/images/Photographs Profile pictures/${portrait}" alt="Photo de profil de: ${name}"
+                <img src="./assets/images/Photographs_Profile_pictures/${portrait}" alt="Photo de profil de: ${name}"
                   class="card__image">
                 ${name}
               </h2>

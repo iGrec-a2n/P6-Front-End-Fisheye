@@ -1,0 +1,16 @@
+@import "../Utils/variables";
+@import "../Utils/mixins";
+
+.select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    display: none;
+
+    @include mobile-only {
+        display: block;
+    }
+
+    @include sort-element-styling;
+}

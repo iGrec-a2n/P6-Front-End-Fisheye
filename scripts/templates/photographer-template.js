@@ -9,7 +9,7 @@ class PhotographerProfileTemplate {
     const { name, city, country, tagline, portrait } = this.cards;
     profileTemplate = `
            <section class="main__profile-container" role="region" tabindex="0">
-          <a class="profile__card-container" title="Visiter la page de profil de ${name} ?"
+          <a class="profile__card-container" title="Visiter la page de profil de ${name}?"
           href="#" target="blank" role="link">
             <div class="profile__card" tabindex="0">
               <h1 class="profile__name" tabindex="0">${name}</h1>

@@ -6,6 +6,7 @@ class PostVideo {
   createPost() {
     let postTemplate = "";
     const { id, photographerId, title, video, likes, date } = this.card;
+    console.log(this.card);
 
     postTemplate = `
               

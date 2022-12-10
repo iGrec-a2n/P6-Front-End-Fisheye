@@ -1,6 +1,5 @@
 class MediaFactory {
     constructor(cardObject, type) {
-      console.log(`A type of: ${type} post, found.`);
       if (type === "video") {
         // call createPostVideo here
         return new PostVideo(cardObject);

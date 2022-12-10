@@ -7,7 +7,7 @@ class PostImage {
     createPost() {
       let postTemplate = "";
       const { id, photographerId, title, image, likes, date } = this.card;
-      console.log(this.card);
+
       postTemplate = `
         <div class="images__post-container" data-post-id="${id}" data-photographers-id="${photographerId}"
             data-publishing-date="${date}" data-likes="${likes}" data-user-liked="false" data-title="${title}">

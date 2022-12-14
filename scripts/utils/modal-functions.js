@@ -216,9 +216,9 @@ function displayLightboxModal(e) {
 
   //We give a value to our variables to get the URL, the file name and the description of the image
   imageUrl = e.currentTarget.children[0].getAttribute("src");
-  imageFileName = imageUrl.split("/Posts photos/images/")[1]
-    ? imageUrl.split("/Posts photos/images/")[1]
-    : imageUrl.split("/Posts photos/videos/")[1];
+  imageFileName = imageUrl.split("/Posts_medias/images/")[1]
+    ? imageUrl.split("/Posts_medias/images/")[1]
+    : imageUrl.split("/Posts_medias/videos/")[1];
 
   postDescription = e.currentTarget.getAttribute("title");
 
@@ -284,6 +284,8 @@ function changeImage(
 ) {
   carouselInfo.actualIndex =
     arrayOfImageFileNames.indexOf(currentImageFileName);
+    // console.log(carouselInfo.actualIndex);
+    // console.log(event+ " type: "+ typeof event);
   if (typeof event !== "string") {
     carouselInfo.direction = event.currentTarget.children[0].classList.contains(
       "fa-chevron-left"
@@ -293,7 +295,8 @@ function changeImage(
   } else {
     carouselInfo.direction = event.includes("ArrowLeft") ? -1 : 1;
   }
-
+  console.log(carouselInfo.direction);
+  
   let userClicksNextOnLastImage =
     carouselInfo.direction + carouselInfo.actualIndex >
     arrayOfImageFileNames.length - 1;
@@ -338,7 +341,7 @@ function updateModalImage(newImageFileName, newPostDescription) {
     imageElement.setAttribute("alt", `Photo nommée '${newPostDescription}'`);
     imageElement.setAttribute(
       "src",
-      `../../assets/images/Posts_photos/images/${newImageFileName}`
+      `../../assets/images/Posts_medias/images/${newImageFileName}`
     );
   } else {
     //Element to be hidden
@@ -348,7 +351,7 @@ function updateModalImage(newImageFileName, newPostDescription) {
     videoElement.setAttribute("alt", `Vidéo nommée '${newPostDescription}'`);
     videoElement.setAttribute(
       "src",
-      `../../assets/images/Posts_photos/videos/${newImageFileName}`
+      `../../assets/images/Posts_medias/videos/${newImageFileName}`
     );
   }
 

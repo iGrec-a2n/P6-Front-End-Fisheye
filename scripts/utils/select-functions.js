@@ -91,9 +91,9 @@ function sortPostsForMobile() {
       //This variable is going to contain the file name
       let thumbnailName = imageOfPost
         .getAttribute("src")
-        .split("/Posts photos/images")[1]
-        ? imageOfPost.getAttribute("src").split("/Posts photos/images")[1]
-        : imageOfPost.getAttribute("src").split("/Posts photos/videos")[1];
+        .split("/Posts_medias/images")[1]
+        ? imageOfPost.getAttribute("src").split("/Posts_medias/images")[1]
+        : imageOfPost.getAttribute("src").split("/Posts_medias/videos")[1];
   
       let actualPostsDataObject = {
         title: post.getAttribute("data-title"),

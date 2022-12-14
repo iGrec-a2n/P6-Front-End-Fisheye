@@ -1,21 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
     <meta charset="utf-8">
-    <link rel="icon" type="image/png" href="assets/favicon.png">
-    <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description"
+      content="Bienvenue sur la page d'accueil de FishEye, la plateforme parfaite pour les photographes freelance!">
+    <!-- <meta name="color-scheme" content="dark light" /> -->
+    <meta name="robots" content="index, follow">
+  
+    <!-- Title -->
     <title>Fisheye</title>
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/8f44403758.js" crossorigin="anonymous"></script>
+    
+    <!-- CSS -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    
+    <!-- Page logo -->
+    <link rel="icon" type="image/png" href="assets/images/logo/favicon.png">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
+    
+    <!-- JS -->
+    <!-- APIs   -->
+    <script src="scripts/api/get-photographer-api.js" defer></script>
+    
+    <!-- Templates   -->
+    <script src="scripts/templates/user-card-template.js" defer></script>
+
+    <!--  Page  -->
+    <script src="scripts/pages/index.js" defer></script>
+
   </head>
   <body>
-    <header>
-        <img src="assets/images/logo.png" class="logo" />
-        <h1>Nos photographes</h1>
+    <header class="header" role="banner" tabindex="0" aria-label="En-tête de la page">
+      <a href="./index.html" class="header__logo-wrapper" title="Lien vers la page d'acceuil">
+        <img src="./assets/images/logo/logo.png" alt="Logo de bannière pour le site de FishEye" class="header__logo">
+      </a>
+      <h1 class="header__title" tabindex="0">Nos photographes</h1>
     </header>
-    <main id="main">
-        <div class="photographer_section"></div>
-    </main>
-    <script src="scripts/factories/photographer.js"></script>
-    <script src="scripts/pages/index.js"></script>
+    
+  <!--  Main content of the page   -->
+  <main class="main" role="main" aria-label="Contenu de la page principale de la page d'accueil" tabindex="0">
+    <div class="main__cards-container">
+      <i class="fa-solid fa-heart"></i>
+
+      <!-- Template card for a unique profile card-->
+      <template>
+        <section class="card" role="region">
+          <a class="card__photograph-profile" title="Visiter la page de profil de ${name}?"
+            href="./html/photographer.html?id=${id}" target="blank" role="link">
+            <h2 class="card__name">
+              <img src="./assets/images/Photographs_Profile_pictures/${portrait}" alt="Photo de profil de: ${name}"
+                class="card__image">
+              ${name}
+            </h2>
+          </a>
+          <div class="card__text-container">
+            <p class="card__location">${city}, ${country}</p>
+            <p class="card__slogan">${tagline}</p>
+            <p class="card__invoice">${price}€/jour</p>
+          </div>
+        </section>
+      </template>
+
+      <!--        -->
+    </div>
+  </main>
   </body>
 </html>

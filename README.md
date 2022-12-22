@@ -1,6 +1,5 @@
 # Base de code du projet P6 - Parcours Front-end
 
-## Démarrer le projet
+## Fisheye - Est une plate forme ou des photographes freelance peuvent exposer leurs travaux et être contacter pour des evenements.
 
-Rien à installer ici, il suffit d'ouvrir le fichier `index.html`.
-
+Demo du site sur le lien suivant : https://igrec-a2n.github.io/P6-Front-End-Fisheye/

@@ -1,4 +1,4 @@
-# Base de code du projet P6 - Parcours Front-end
+# Code du projet P6 - Parcours Front-end - OpenClassrooms
 
 ## Fisheye - Est une plate forme ou des photographes freelance peuvent exposer leurs travaux et être contacter pour des evenements.
 

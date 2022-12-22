@@ -59,9 +59,9 @@
           <h1 class="contact__title" id="photographers-name" tabindex="0">Contactez-moi <br />
             [NOM] [PRÉNOM]
           </h1>
-          <button type="button" class="contact__button-close-dialog" tabindex="0"><i
+          <button type="button" class="contact__button-close-dialog" tabindex="0"><span class="sr-only">Fermer le formulaire</span><i
               class="fa-solid fa-xmark contact__button-close-dialog-icon"
-              aria-label="Bouton pour fermer la boîte de dialogue"></i></button>
+              aria-label="Bouton pour fermer la boîte de dialogue" value="Fermer le formulaire"></i></button>
         </div>
         <form action="photographer.html" method="dialog" class="contact__form" role="form">
           <fieldset class="contact__fieldset">
@@ -92,7 +92,7 @@
             </section>
           </fieldset>
           <button type="submit" class="button contact__submit-button"
-            aria-label="Bouton pour envoyer le message">Envoyer</button>
+            aria-label="Bouton pour envoyer le message" value="Envoyer">Envoyer</button>
         </form>
 
         <div class="contact__validated-form hide">
@@ -106,16 +106,16 @@
     <dialog class="lightbox__modal" role="dialog" aria-label="Vue rapprochée de l'image">
       <div class="lightbox__content">
         <button type="button" class="lightbox__button-close-dialog"
-          aria-label="Bouton pour fermer la boîte de dialogue">
+          aria-label="Bouton pour fermer la boîte de dialogue" value="Fermer aperçu"><span class="sr-only">Fermer l'aperçu</span>
           <i class="fa-solid fa-xmark lightbox__button-close-dialog-icon" aria-hidden="true" title="Fermer l'aperçu"></i>
         </button>
 
-        <button type="button" class="lightbox__button-previous" aria-label="Bouton pour passer au post précédente">
+        <button type="button" class="lightbox__button-previous" aria-label="Bouton pour passer au post précédente" value="Précedent"><span class="sr-only">Précedent</span>
           <i class="fa-solid fa-chevron-left lightbox__button-previous-icon" aria-hidden="true" title="Post précédent"></i>
         </button>
 
-        <button type="button" class="lightbox__button-next" aria-label="Bouton pour passer au post suivant">
-          <i class="fa-solid fa-chevron-right lightbox__button-next-icon" aria-hidden="true" title="Post suivant"></i>
+        <button type="button" class="lightbox__button-next" aria-label="Bouton pour passer au post suivant"><span class="sr-only">Suivant</span>
+          <i class="fa-solid fa-chevron-right lightbox__button-next-icon" aria-hidden="true" title="Post suivant" value="Suivant"></i>
         </button>
 
 
@@ -163,7 +163,7 @@
           </select>
           <!--      Will be displayed on widescreen devices      -->
           <button class="dropdown-menu__sort-button" type="button" role="listbox" aria-expanded="false"
-            aria-level="Bouton pour ouvrir le menu déroulant" role="button">
+            aria-level="Bouton pour ouvrir le menu déroulant" role="button" value="Trier les photos">
             Popularité
           </button>
           <div class="dropdown-menu hide">

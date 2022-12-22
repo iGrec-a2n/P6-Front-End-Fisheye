@@ -27,7 +27,7 @@ class PostVideo {
           <div class="images__post-text">
             <p class="images__post-description" tabindex="0">${title}</p>
             <button class="images__post-like-button" title="Mettre un like au post '${title}'?" aria-pressed="false"
-              aria-label="Bouton pour liker la publication nommée '${title}'" tabindex="0">${likes} <i
+              aria-label="Bouton pour liker la publication nommée '${title}'" tabindex="0" value="Ajouter un like">${likes} <span class="sr-only">Ajouter un like</span><i
                 class="fa-solid fa-heart"></i></button>
         </div>
       </div>

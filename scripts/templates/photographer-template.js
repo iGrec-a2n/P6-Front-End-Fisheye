@@ -26,7 +26,7 @@ class PhotographerProfileTemplate {
         </a>
         <div class="profile__contact">
           <button type="button" class="button button--rounded" tabindex="0" value="Contactez-moi"
-            aria-label="Bouton pour ouvrir la boîte modale pour contacter le photographe">Contactez-moi</button>
+            aria-label="Bouton pour ouvrir la boîte modale pour contacter le photographe" value="Contacter le photographe">Contactez-moi</button>
         </div>
         <div class="profile__image-container">
           <img src="../assets/images/Photographs_Profile_pictures/${portrait}"

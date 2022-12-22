@@ -1,15 +1,23 @@
 class UserCardTemplate {
-    constructor(cards) {
-      this.cards = cards;
-    }
-  
-    createCards() {
-      let photographerTemplate = "";
-      let photographerCards = "";
-  
-      for (let card of this.cards) {
-        const { name, id, city, country, tagline, price, portrait } = card;
-        photographerTemplate = `
+  constructor(cards) {
+    this.cards = cards;
+  }
+
+  createCards() {
+    let photographerTemplate = '';
+    let photographerCards = '';
+
+    for (const card of this.cards) {
+      const {
+        name,
+        id,
+        city,
+        country,
+        tagline,
+        price,
+        portrait
+      } = card;
+      photographerTemplate = `
         <section class="card" role="region">
             <a class="card__photograph-profile" title="Visiter la page de profil de ${name}?"
               href="./html/photographer.html?id=${id}" target="blank" role="link">
@@ -26,11 +34,10 @@ class UserCardTemplate {
             </div>
           </section>
           `;
-  
-        photographerCards += photographerTemplate;
-      }
-  
-      return photographerCards;
+
+      photographerCards += photographerTemplate;
     }
+
+    return photographerCards;
   }
-  
+}

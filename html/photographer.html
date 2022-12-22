@@ -52,16 +52,6 @@
 
   <!-- Main content of the page   -->
   <main class="main" role="main" aria-label="Contenu de la page principale de la page du photographe" tabindex="0">
-    <!--   Sticky bar for the price and the amount of likes   -->
-    <div class="main__invoice-likes" tabindex="0">
-      <div class="main__likes">
-        <p aria-label="Le photographe accumule 69 420 likes" class="main__amount-of-likes" tabindex="0">69 420 <i
-            class="fa-solid fa-heart"></i></p>
-      </div>
-      <div class="main__invoice">
-        <p aria-label="Et tarif du photographe à partir de ??€/jour" class="main__price" tabindex="0">[FACTURE EN €]</p>
-      </div>
-    </div>
     <!-- Modal window to contact the photographer -->
     <dialog class="contact__modal" role="dialog" aria-labelledby="photographers-name">
       <div class="contact__modal-content">
@@ -117,15 +107,15 @@
       <div class="lightbox__content">
         <button type="button" class="lightbox__button-close-dialog"
           aria-label="Bouton pour fermer la boîte de dialogue">
-          <i class="fa-solid fa-xmark lightbox__button-close-dialog-icon"></i>
+          <i class="fa-solid fa-xmark lightbox__button-close-dialog-icon" aria-hidden="true" title="Fermer l'aperçu"></i>
         </button>
 
         <button type="button" class="lightbox__button-previous" aria-label="Bouton pour passer au post précédente">
-          <i class="fa-solid fa-chevron-left lightbox__button-previous-icon"></i>
+          <i class="fa-solid fa-chevron-left lightbox__button-previous-icon" aria-hidden="true" title="Post précédent"></i>
         </button>
 
         <button type="button" class="lightbox__button-next" aria-label="Bouton pour passer au post suivant">
-          <i class="fa-solid fa-chevron-right lightbox__button-next-icon"></i>
+          <i class="fa-solid fa-chevron-right lightbox__button-next-icon" aria-hidden="true" title="Post suivant"></i>
         </button>
 
 
@@ -200,6 +190,17 @@
         </div>
 
       </div>
+      
+    <!--   Sticky bar for the price and the amount of likes   -->
+    <div class="main__invoice-likes" tabindex="0">
+      <div class="main__likes">
+        <p aria-label="Le photographe accumule 69 420 likes" class="main__amount-of-likes" tabindex="0">69 420 <i
+            class="fa-solid fa-heart"></i></p>
+      </div>
+      <div class="main__invoice">
+        <p aria-label="Et tarif du photographe à partir de ??€/jour" class="main__price" tabindex="0">[FACTURE EN €]</p>
+      </div>
+    </div>
 
       <div class="images" tabindex="0" aria-label="Publications faites par le photographe">
 

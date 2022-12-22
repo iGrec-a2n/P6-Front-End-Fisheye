@@ -202,6 +202,7 @@
   [type="button"],
   [type="reset"],
   [type="submit"] {
+    appearance: button;
     -webkit-appearance: button;
   }
   
@@ -294,6 +295,7 @@
    */
   
   [type="search"] {
+    appearance: texfield;
     -webkit-appearance: textfield; /* 1 */
     outline-offset: -2px; /* 2 */
   }

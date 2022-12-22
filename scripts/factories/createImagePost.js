@@ -3,7 +3,7 @@ class PostImage {
     this.card = card;
   }
 
-    //changeUIOfPostsV2
+    // updateMediaType
     createPost() {
       let postTemplate = "";
       const { id, photographerId, title, image, likes, date } = this.card;

@@ -2,15 +2,15 @@
 @import "../Utils/mixins";
 
 .select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 
-    display: none;
+  display: none;
 
-    @include mobile-only {
-        display: block;
-    }
+  @include mobile-only {
+    display: block;
+  }
 
-    @include sort-element-styling;
+  @include sort-element-styling;
 }

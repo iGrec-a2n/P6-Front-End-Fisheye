@@ -31,7 +31,7 @@ class PhotographerProfileTemplate {
     return profileTemplate;
   }
 
-  //changeUIOfPosts
+  //updatePosts
   createPosts() {
     let postTemplate = "";
     let postsCards = "";

@@ -1,7 +1,7 @@
 function sortPostsForMobile() {
   let selectElement = this;
 
-  // We take the current posts
+  //We take the current posts
   sortPosts(selectElement);
 }
 
@@ -34,12 +34,14 @@ function sortPostsForWidescreens() {
   let dropDownMenuNotOpened = dropDownMenu.classList.contains("hide");
   if (dropDownMenuNotOpened) {
     dropDownMenu.classList.remove("hide");
+    sortButton.setAttribute("style", "display: none");
     iconLabelContainer.classList.add("active-sort-button-icon");
     eventIsNotWindow
       ? this.setAttribute("aria-expanded", "true")
       : sortButton.setAttribute("aria-expanded", "true");
   } else {
     dropDownMenu.classList.add("hide");
+    sortButton.setAttribute("style", "display: block");
     iconLabelContainer.classList.remove("active-sort-button-icon");
     eventIsNotWindow
       ? this.setAttribute("aria-expanded", "false")
@@ -134,7 +136,7 @@ function sortPosts(element) {
     sortingProperty
   );
   photographerMediaArray = sortedArray;
-  PhotographerApp.updatePosts(sortedArray, postsContainer);
+  // PhotographerApp.updatePosts(sortedArray, postsContainer);
   postsContainer.textContent = "";
   for (post of sortedArray) {
     let postHasImageOrVideo = post.image !== undefined ? "image" : "video";

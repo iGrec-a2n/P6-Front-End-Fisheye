@@ -9,7 +9,7 @@ function addLikeToPost() {
   let likeButtonHasAlreadyBeenPressed =
     likeButton.classList.contains('active-like');
 
-  let postLikes = Number(likeButton.textContent);
+  let postLikes = new Number(likeButton.textContent.replace(/\D/g,''));
 
   if (likeButtonHasAlreadyBeenPressed) {
     likeButton.classList.remove('active-like');

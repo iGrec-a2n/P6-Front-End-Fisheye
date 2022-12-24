@@ -70,20 +70,20 @@ class PhotographerApp {
   }
 
   // Static method that fills the profile infos
-  static changeUIOfProfile(dataObject, container) {
+  static updateProfile(dataObject, container) {
     container.innerHTML = new PhotographerProfileTemplate(
       dataObject
     ).createProfile();
   }
 
   // Static method that fills the container for the posts
-  static changeUIOfPosts(dataArray, container) {
+  static updatePosts(dataArray, container) {
     container.innerHTML = new PhotographerProfileTemplate(
       dataArray
     ).createPosts();
   }
 
-  static changeUIOfPostsV2(postObject, type, container) {
+  static updateMediaType(postObject, type, container) {
     let media = new MediaFactory(postObject, type);
     container.innerHTML += media.createPost();
   }
@@ -92,7 +92,7 @@ class PhotographerApp {
     new StickyBarTemplate(photographerObject).updateStickyBar();
   }
 
-  static changeUIOfStickyBar(photographerObject) {
+  static updateStickyBar(photographerObject) {
     new StickyBarTemplate(photographerObject).createStickyBar();
   }
 }
@@ -158,13 +158,13 @@ launchPhotographerApp.then((data) => {
   };
 
   // Calling static methods to add fill the page
-  PhotographerApp.changeUIOfStickyBar(stickyBarData);
-  PhotographerApp.changeUIOfProfile(photographerObject, profileContainer);
+  PhotographerApp.updateStickyBar(stickyBarData);
+  PhotographerApp.updateProfile(photographerObject, profileContainer);
 
-  // PhotographerApp.changeUIOfPosts(photographerMediaArray, postsContainer);
+  // PhotographerApp.updatePosts(photographerMediaArray, postsContainer);
   for (post of photographerMediaArray) {
     let postHasImageOrVideo = post.image !== undefined ? 'image' : 'video';
-    PhotographerApp.changeUIOfPostsV2(
+    PhotographerApp.updateMediaType(
       post,
       postHasImageOrVideo,
       postsContainer

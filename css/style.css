@@ -485,6 +485,17 @@ ul {
   border-radius: var(--buttons-border-radius);
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
 :root {
   --body-bg-color: white;
   --tab-shadow-color: rgb(228, 169, 59);
@@ -747,13 +758,13 @@ ul {
 
 ::-webkit-scrollbar {
   background-color: var(--scrollbar-bg-color);
-  border-radius: 100vmax;
+  border-radius: 14px;
   width: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: var(--scrollbar-thumb-bg-color);
-  border-radius: 100vmax;
+  border-radius: 14px;
   border: 2px solid var(--scrollbar-bg-color);
 }
 ::-webkit-scrollbar-thumb:hover {
@@ -870,7 +881,7 @@ ul {
   transition: filter 350ms ease-out;
 }
 .header__logo:hover {
-  filter: drop-shadow(5px 5px 2px #901C1C);
+  filter: drop-shadow(5px 5px 2px #901c1c);
 }
 .header__title {
   font-size: 36px;
@@ -1270,9 +1281,11 @@ ul {
   }
 }
 .main__photographs-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   padding-top: 20px;
+  margin-top: 35px;
 }
 @media screen and (min-width: 1150px) {
   .main__photographs-container {
@@ -1602,7 +1615,7 @@ ul {
   }
 }
 .profile__location {
-  color: var(--text-color-secondary);
+  color: var(--text-color-quinary);
   font-size: 24px;
   text-align: left;
 }
@@ -1653,7 +1666,8 @@ ul {
   grid-template-rows: repeat(1, 1fr);
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
-  margin-top: 35px;
+  position: relative;
+  margin-top: 80px;
 }
 @media screen and (max-width: 768px) {
   .images {
@@ -1690,6 +1704,10 @@ ul {
   display: flex;
   justify-content: flex-start;
   gap: 25px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 4;
 }
 @media screen and (max-width: 768px) {
   .images__sorter {
@@ -1804,7 +1822,7 @@ ul {
   background-color: var(--buttons-bg-color);
   width: 170px;
   max-height: 170px;
-  border-radius: 0 0 var(--buttons-border-radius) var(--buttons-border-radius);
+  border-radius: var(--buttons-border-radius);
 }
 @media screen and (max-width: 768px) {
   .dropdown-menu {
@@ -1850,17 +1868,28 @@ ul {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  right: -10px;
+  left: -5px;
 }
 .dropdown-menu__list-item {
   padding-block: 14px;
   width: 88%;
   text-align: left;
+  border: 3px solid var(--buttons-bg-color);
   border-top: 2px solid white;
+  border-radius: var(--buttons-border-radius);
   color: var(--buttons-color);
+}
+.dropdown-menu__list-item:nth-child(1) {
+  border-top: 0 !important;
+  border-radius: var(--buttons-border-radius);
 }
 .dropdown-menu__list-item:hover {
   cursor: pointer;
   background-color: var(--buttons-bg-color--hover);
+  border: 3px solid var(--buttons-bg-color);
+  border-top: 2px solid white;
   color: var(--buttons-color--hover);
 }
 
@@ -1868,20 +1897,41 @@ ul {
   :root {
     --body-bg-color: black;
     --tab-shadow-color: darkblue;
-    --text-color-primary:#D3573C;
-    --text-color-secondary:#d93939;
-    --text-color-tertiary:white;
-    --text-color-quaternary:#8a8a8a;
-    --text-color-slogan:#adadad;
-    --bg-color-primary:#D3573C;
-    --bg-color-secondary:#d93939;
-    --bg-color-tertiary:white;
-    --bg-color-quaternary:#8a8a8a;
-    --scrollbar-bg-color:#424242;
-    --scrollbar-thumb-bg-color:#686868;
-    --scrollbar-thumb-bg-color--hover:#7b7b7b;
-    --scrollbar-thumb-bg-color--active:#a1a1a1;
+    --text-color-primary: #D3573C;
+    --text-color-secondary: #d93939;
+    --text-color-tertiary: white;
+    --text-color-quaternary: #8a8a8a;
+    --text-color-slogan: #adadad;
+    --bg-color-primary: #d3573c;
+    --bg-color-secondary: #d93939;
+    --bg-color-tertiary: white;
+    --bg-color-quaternary: #8a8a8a;
+    --scrollbar-bg-color: transparent;
+    --scrollbar-thumb-bg-color: #686868;
+    --scrollbar-thumb-bg-color--hover: #7b7b7b;
+    --scrollbar-thumb-bg-color--active: #a1a1a1;
     --odd-card-bg-color: #0a0a0a;
+  }
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --body-bg-color: white;
+    --tab-shadow-color: #d4ebf2;
+    --text-color-primary: #D3573C;
+    --text-color-secondary: #d93939;
+    --text-color-tertiary: black;
+    --text-color-quaternary: #8a8a8a;
+    --text-color-quinary: #901c1c;
+    --text-color-slogan: #525252;
+    --bg-color-primary: #d3573c;
+    --bg-color-secondary: #901c1c;
+    --bg-color-tertiary: black;
+    --bg-color-quaternary: #8a8a8a;
+    --scrollbar-bg-color: transparent;
+    --scrollbar-thumb-bg-color: rgba(190, 187, 187, 0.3568627451);
+    --scrollbar-thumb-bg-color--hover: #7b7b7b;
+    --scrollbar-thumb-bg-color--active: #a1a1a1;
+    --odd-card-bg-color: #fafbfc;
   }
 }
 

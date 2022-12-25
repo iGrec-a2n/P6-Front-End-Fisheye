@@ -281,18 +281,14 @@ function changeImage(
   arrayOfDescriptions,
 ) {
   carouselInfo.actualIndex = arrayOfImageFileNames.indexOf(currentImageFileName);
-  // console.log(carouselInfo.actualIndex);
-  // console.log(event+ " type: "+ typeof event);
   if (typeof event !== 'string') {
-    carouselInfo.direction = event.currentTarget.classList.contains(
+    carouselInfo.direction = event.currentTarget?.children[0].classList.contains(
       'fa-chevron-left',
     ) ? -1
       : 1;
-    console.log(event.currentTarget.children[0]);// 1 : -1
   } else {
     carouselInfo.direction = event.includes('ArrowLeft') ? -1 : 1;
   }
-  console.log(carouselInfo.direction);
 
   const userClicksNextOnLastImage = carouselInfo.direction + carouselInfo.actualIndex
     > arrayOfImageFileNames.length - 1;

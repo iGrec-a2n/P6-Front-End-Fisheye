@@ -114,19 +114,18 @@
           <i class="fa-solid fa-chevron-left lightbox__button-previous-icon" aria-hidden="true" title="Post précédent"></i>
         </button>
 
-        <button type="button" class="lightbox__button-next" aria-label="Bouton pour passer au post suivant"><span class="sr-only">Suivant</span>
-          <i class="fa-solid fa-chevron-right lightbox__button-next-icon" aria-hidden="true" title="Post suivant" value="Suivant"></i>
-        </button>
-
-
         <div class="lightbox__image-post-description" role="group" aria-roledescription="slide">
-          <div class="lightbox__image-container">
+          <div class="lightbox__image-container" tabindex="0">
             <img src="
             " alt="[DESCRIPTION TEXTUELLE ALTERNATIVE]" class="lightbox__image hide">
             <video src="" controls class="lightbox__video hide"></video>
           </div>
           <p class="lightbox__post-description">Post description</p>
         </div>
+
+        <button type="button" class="lightbox__button-next" aria-label="Bouton pour passer au post suivant"><span class="sr-only">Suivant</span>
+          <i class="fa-solid fa-chevron-right lightbox__button-next-icon" aria-hidden="true" title="Post suivant" value="Suivant"></i>
+        </button>
 
       </div>
     </dialog>
